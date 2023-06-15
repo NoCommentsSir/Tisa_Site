@@ -1,0 +1,284 @@
+<!DOCTYPE html5>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>tisa-l</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap" rel="stylesheet">
+		<script src="source.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://use.fontawesome.com/96fbacd22c.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			jQuery(document).ready(function () {
+				$(".exp-text-block").hide();
+				$('.1-exp').click(
+					function(){
+						$(".3-text").hide();
+						$(".2-text").hide();
+						$(".1-text").stop().fadeToggle(300);
+					})
+				$('.2-exp').click(
+					function(){
+						$(".1-text").hide();
+						$(".3-text").hide();
+						$(".2-text").stop().fadeToggle(300);
+				})
+				$('.3-exp').click(
+					function(){
+						$(".1-text").hide();
+						$(".2-text").hide();
+						$(".3-text").stop().fadeToggle(300);
+					})
+			});
+		</script>
+		<header>
+			<div class="container-fluid">
+				<div class="row lower-topbar align-items-center bg-dark">
+					<div class="col-2"></div>
+					<div class="col-4"><span class="someinfo-text email" style="margin-left: -80px;">tisa-l@mail.ru</span></div>
+					<div class="col-4"><span class="someinfo-text phone" style="margin-left: -80px;">(8552) 44-37-58, 44-37-47</span></div>
+				</div>
+			</div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+				<img src="img/logo.gif" alt="logo" class="navbar-brand">
+				<ul class="menu">
+					<li class="menu-list"><a href="#" class="menu-link active-link">Главная </a></li>
+					<li class="menu-list">
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle menu-link" data-toggle="dropdown" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">Продукция </a>
+							<div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" href="#">Основное</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="Tisa-lCatalogAvto.html">Автомобилестроение</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Натяжные потолки</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Пластиковые окна</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Мебель</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Замки</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Разное</a>
+							</div>
+						</div>
+					</li>
+					<li class="menu-list"><a href="Tisa-lContacts.html" class="menu-link">Информация</a></li>
+				</ul>
+				<div class="search-button">
+					<form class="searching">
+						<a href="https://www.google.com/" class="icon"><i class="fa fa-search" aria-hidden="true"></i></a>
+						<input type="search" class="area" placeholder="Поиск...">
+					</form>
+				</div>
+			</nav>
+		</header>
+		<div class="main">
+			<div id="slider" class="carousel w-auto slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#slider" data-slide-to="0" class="indicator bg-info active"></li>
+					<li data-target="#slider" data-slide-to="1" class="indicator bg-info"></li>
+					<li data-target="#slider" data-slide-to="2" class="indicator bg-info"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="dark"></div>
+						<img src="img/slide2.jpg" class="d-block w-100 slide1" alt="pichi">
+						<div class="carousel-caption ">
+							<h5 class="slider-title">О нас</h5>
+							<p class="slider-text">Компания ООО «Тиса-Л» создана 1990 году. С момента образования и по настоящий момент основное направление деятельности компании - литье пластмасс под давлением и изготовление пресс-форм.</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="dark"></div>
+						<img src="img/slide1.jpg" class="d-block w-100 slide1" alt="pichi">
+						<div class="carousel-caption ">
+							<h5 class="slider-title">О нас</h5>
+							<p class="slider-text">Компания располагает собственной производственной базой, включающей в себя десятки единиц литейного и механообрабатывающего оборудования.</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="dark"></div>
+						<img src="img/slide3.jpg" class="d-block w-100 slide1" alt="pichi">
+						<div class="carousel-caption ">
+							<h5 class="slider-title">О нас</h5>
+							<p class="slider-text">Одним из направлений является изготовление пресс-форм</p>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div class="products-imp">
+				<div class="container-fluid">
+					<div class="row prod-imp">
+						<div class="adv-title"><h2>Ходовая продукция</h2></div>
+						<div class="w-100"></div>
+						<div class="prod-imp-adv">
+							<ul class="prod-imp-ul">
+								<li class="prod-imp-prod"><img src="img/lustra.jpg" alt="люстра" style="border-radius: 15px;" width="100%" height="100%">
+									<div class="hide-block1">
+								<div class="exp-title"><h3>Люстры</h3></div>
+								<p class="exp-text1">Lorem ipsum dolor sit amet, consectetur.<span><i class="fa fa-mouse-pointer" aria-hidden="true"></i></span></p>
+							</div></li>
+								<li class="prod-imp-prod"><img src="img/press-form.jpg" alt="пресс-форма" style="border-radius: 15px;" width="100%" height="100%">
+									<div class="hide-block1">
+								<div class="exp-title"><h3>Пресс-формы</h3></div>
+								<p class="exp-text1">Lorem ipsum dolor sit amet, consectetur.<span><i class="fa fa-mouse-pointer" aria-hidden="true"></i></span></p>
+							</div></li>
+								<li class="prod-imp-prod"><img src="img/lock.jpg" alt="замок" style="border-radius: 15px;" width="100%" height="100%">
+									<div class="hide-block1">
+								<div class="exp-title"><h3>Замки</h3></div>
+								<p class="exp-text1">Lorem ipsum dolor sit amet, consectetur.<span><i class="fa fa-mouse-pointer" aria-hidden="true"></i></span></p>
+							</div></li>
+							</ul>
+						</div>		
+					</div>
+				</div>
+			</div>
+			<div class="advantage">
+				<div class="container-fluid">
+					<div class="row title-adv">
+						<div class="adv-title"><h2>Наши преимущества</h2></div>
+						<div class="w-100 helpus"></div>
+						<div class="col-6 img-cont">
+							<img src="img/time.jpg" class="img-adv" alt="time...">
+						</div>
+						<div class="w-100 fix-width"></div>
+						<div class="col-6">
+							<div class="col-11 explonation 1-exp">
+								<div class="exp-title"><h3>Профессионализм</h3></div>
+								<div class="exp-text-block 1-text">
+									<p class="exp-text">Компания «ООО «Тиса-Л» разрабатывает пластмассовые изделия различной сложности, с учетом их конструктивных, эстетических и эргономических особенностей, а также эксплуатационных и технологических параметров пластмасс, изготавливает оснастку (пресс-формы) под конкретного заказчика.</p>
+								</div>
+							</div>
+							<div class="w-100 helpus"></div>
+							<div class="col-11 explonation 2-exp">
+								<div class="exp-title"><h3>Многолетний опыт на рынке</h3></div>
+								<div class="exp-text-block 2-text">
+									<p class="exp-text">Компания ООО «Тиса-Л» создана 1990 году. С момента образования и по настоящий момент основное направление деятельности компании - литье пластмасс под давлением.  Коллектив компании нацелен на достижение конкурентоспособности выпускаемой продукции и развития сотрудничества со всеми заинтересованными участниками рынка переработки полимеров.</p>
+								</div>
+							</div>
+							<div class="w-100 helpus"></div>
+							<div class="col-11 explonation 3-exp">
+								<div class="exp-title"><h3>Поддержка клиентов</h3></div>
+								<div class="exp-text-block 3-text">
+									<p class="exp-text">При необходимости Мы поможем Вам разобраться в целесообразности использования на Вашем предприятии пластмассового изделия в комплектации Вашей продукции или предложим готовое изделие. Мы предоставляем для клиентов полный комплекс услуг от конструирования и изготовления серийной оснастки до массового производства полимерных изделий. Индивидуальный подход к каждому клиенту позволяет нашей компании выпускать необходимый ассортимент даже для частных лиц, по значительно низкой цене.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="reg-form bg-dark">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-6">
+							<div class="reg-text mx-auto">
+								<div class="reg-title"><h2>Контакты</h2></div>
+								<p id="reg-info-exp">Свяжитесь с нами по данным ниже.</p>
+								<ul>
+									<li><p class="reg-info phone">(8552) 44-37-58, 44-37-47</p></li>
+									<li><p class="reg-info email">tisa-l@mail.ru</p></li>
+									<li><p class="reg-info home">РТ г.Набережные Челны,</p></li>
+									<li><p class="reg-info">Ресурсный проезд, 16</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="reg-title"><h2>Оставьте заявку</h2></div>
+							<p id="reg-info-exp">Введите ваши данные в форму. Мы скоро свяжемся с вами!</p>
+							<form class="reg-form-true">
+								<div class="reg-input">
+									<label for="name">ФИО</label>
+									<input type="text" class="form-control name" name="name" id="name">
+									<label for="name" class="error" id="label-error"></label>
+								</div>
+								<div class="reg-input">
+									<label for="email">Почта</label>
+									<input type="email" class="form-control name" name="email" id="email">
+									<label for="email" class="error" id="label-error"></label>
+								</div>
+								<div class="reg-input">
+									<label for="phone">Номер телефона</label>
+									<input type="text" class="form-control name" name="phone" id="phone">
+									<label for="phone" class="error" id="label-error"></label>
+								</div>
+								<div class="reg-input">
+									<label for="name-comp">Название вашей компании</label>
+									<input type="text" class="form-control name" name="name-comp" id="name-comp">
+									<label for="name-comp" class="error" id="label-error"></label>
+								</div>
+								<div class="reg-textarea">
+									<label for="message">Текст заявки</label>
+									<textarea name="message" class="form-control" id="message"></textarea>
+									<label for="message" class="error" id="label-error"></label>
+								</div>
+								<div class="reg-submit">
+									<input type="submit" name="submit" class="bg-dark" id="submit" placeholder="Отправить">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container-fluid">
+				<div class="row align-items-center question">
+					<span class="footer-trend">остались вопросы? пишите нам! tisa-l@mail.ru</span>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row footer-cont">
+					<div class="dark-footer"></div>
+					<div class="col-3">
+						<div class="reg-title"><h2>Контакты</h2></div>
+						<ul>
+							<li><p class="reg-info phone">(8552) 44-37-58, 44-37-47</p></li>
+							<li><p class="reg-info email">tisa-l@mail.ru</p></li>
+							<li><p class="reg-info home">РТ г.Набережные Челны,  Ресурсный проезд, 16</p></li>
+						</ul>
+					</div>
+					<div class="col-1 play"></div>
+					<div class="col-3">
+						<div class="reg-title"><h2>Направления</h2></div>
+						<ul>
+							<li><p class="reg-info footer-text">Литье пластмас</p></li>
+							<li><p class="reg-info footer-text">Проектирование и изготовление пресс-форм</p></li>
+							<li><p class="reg-info footer-text">Металлообработка</p></li>
+						</ul>
+					</div>
+					<div class="col-3 notplay">
+						<div class="reg-title"><h2>Навигация</h2></div>
+						<ul>
+							<li><p style="margin-bottom: 0 !important" class="reg-info footer-link active-link">Главная</p></li>
+							<li>
+								<p style="margin-bottom: 0 !important"class="reg-info footer-link">Продукция</p>
+								<ul>
+									<li class="sublist"><a href="#" class="reg-info sublink">Основная</a></li>
+									<li class="sublist"><a href="Tisa-lCatalogAvto.html" class="reg-info sublink">Автомобилестроение</a></li>
+									<li class="sublist"><a href="#" class="reg-info sublink">Натяжные потолки</a></li>
+								</ul>
+							</li>
+							<li><a href="Tisa-lContacts.html"class="reg-info footer-link">Информация</a></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="col-9"><span id="copyright">ООО «Тиса-Л» © 1990 Литье пластмасс.</span></div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

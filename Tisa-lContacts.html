@@ -1,0 +1,233 @@
+<!DOCTYPE html5>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>tisa-l</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap" rel="stylesheet">
+		<script src="source.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://use.fontawesome.com/96fbacd22c.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			jQuery(document).ready(function () {
+			$("#scroller").click(function() {
+    			$('html, body').animate({
+        			scrollTop: $(".scroll").offset().top - 166
+        		}, 1000);
+			});
+		});
+		</script>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+				<img src="img/logo.gif" alt="logo" class="navbar-brand">
+				<ul class="menu">
+					<li class="menu-list"><a href="Tisa-lIndex.html" class="menu-link">Главная </a></li>
+					<li class="menu-list">
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle menu-link" data-toggle="dropdown" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">Продукция </a>
+							<div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" href="#">Основное</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="Tisa-lCatalogAvto.html">Автомобилестроение</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Натяжные потолки</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Пластиковые окна</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Мебель</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Замки</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Разное</a>
+							</div>
+						</div>
+					</li>
+					<li class="menu-list">
+						<div class="dropdown">
+							<a href="#" class="dropdown-toggle menu-link active-link" data-toggle="dropdown" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">Информация </a>
+							<div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" href="#">Контакты</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#" id="scroller">Юр. инфо</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="search-button">
+					<form class="searching">
+						<a href="https://www.google.com/" class="icon"><i class="fa fa-search" aria-hidden="true"></i></a>
+						<input type="search" class="area" placeholder="Поиск...">
+					</form>
+				</div>
+			</nav>
+		</header>
+		<div class="main">
+			<div class="container-fluid">
+				<div class="row bg-dark align-items-center contact-title-row">
+					<div class="col-1"></div>
+					<div class="contact-title col-5">
+						<div class="reg-title"><h2>Контакты</h2></div>
+					</div>
+					<div class="contact-bread col-5">
+						<ul class="bread-ul md-fix">
+							<li class="bread-list"><a href="Tisa-lIndex.html" class="bread-link">Главная</a></li>
+							<li class="bread-list"><p class="bread-link">//</p></li>
+							<li class="bread-list"><p class="bread-link bread-fix">Информация</a></li>
+							<li class="bread-list"><p class="bread-link bread-fix">//</p></li>
+							<li class="bread-list"><p class="bread-link active">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row section">
+					<div class="col col-md-3 comp-info">
+						<ul>
+							<li>
+								<div class="icon-comp">
+									<i class="fa fa-phone" aria-hidden="true"></i>
+								</div>
+								<p>
+								<span>Телефон</span>
+								(8552) 44-37-58, 44-37-47</p>
+							</li>
+							<li>
+								<div class="icon-comp">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+								</div>
+								<p>
+								<span>Почта</span>
+								tisa-l@mail.ru</p>
+							</li>
+							<li>
+								<div class="icon-comp">
+									<i class="fa fa-home" aria-hidden="true"></i>
+								</div>
+								<p>
+								<span>Адрес</span>
+								Ресурсный проезд, 16</p>
+							</li>
+							<li>
+								<div class="icon-comp">
+									<i class="fa fa-envelope-o" aria-hidden="true"></i>
+								</div>
+								<span>Почтовый индекс</span>
+								<p>423800</p>
+							</li>
+							<li>
+								<div class="icon-comp">
+									<i class="fa fa-clock-o" aria-hidden="true"></i>
+								</div>
+								<p>
+								<span>Рабочие часы</span>
+								С ... до 16:00 каждый будний день</p>
+							</li>
+						</ul>
+					</div>
+					<div class="col ml-auto col-md-8">
+						<div class="map">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4640d2d0d177b4808cdb5c9b9e432a3a140f607c055a979f2f33b453e6056e56&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid scroll">
+			<div class="row bg-dark align-items-center contact-title-row">
+				<div class="col-1"></div>
+				<div class="contact-title col-6">
+					<div class="reg-title"><h2>Юр. инфо</h2></div>
+				</div>
+				<div class="contact-bread col-4">
+					<ul class="bread-ul">
+						<li class="bread-list"><a href="Tisa-lIndex.html" class="bread-link">Главная</a></li>
+						<li class="bread-list"><p class="bread-link">//</p></li>
+						<li class="bread-list"><p class="bread-link bread-fix">Информация</a></li>
+							<li class="bread-list"><p class="bread-link bread-fix">//</p></li>
+						<li class="bread-list"><p class="bread-link active">Юр. инфо</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row information">
+				<div class="company-title">
+					<h4>Общество с ограниченной ответственностью «Тиса-Л»</h4>
+				</div>
+				<div class="w-100"></div>
+				<div class="w-100"></div>
+				<div class="props-title">
+					<h5 class="director-title"><b>Реквизиты:</b></h5>
+				</div>
+				<div class="w-100"></div>
+				<div class="props-text">
+					<p><span>ИНН:</span> 1650072847,</p>
+					<p><span>КПП:</span> 165001001,</p>
+					<p><span>ОГРН:</span> 1031616012900,</p>
+					<p><span>ОКПО:</span> 33858689</p>
+					<p><span>ОКВЭД:</span> 25.2, 25.21, 25.22, 25.24, 28.52,</p>
+					<p><span>р/счет:</span> 40702810762030101036</p>
+					<p>в Отделении №8610 СБЕРБАНКА РОССИИ г.Казань.</p>
+					<p><span>кор/счет:</span> 30101810600000000603</p>
+					<p><span>БИК:</span> 049205603</p>
+				</div>
+				<div class="w-100"></div>
+				<div class="adress">
+					<h5 class="director-title"><b>Почтовый адресс:</b></h5>
+					<span>РТ, 423819, г. Набережные Челны-19, а/я 96</span>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container-fluid">
+				<div class="row align-items-center question bg-dark">
+					<span class="footer-trend">остались вопросы? пишите нам! tisa-l@mail.ru</span>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row footer-cont">
+					<div class="dark-footer"></div>
+					<div class="col-3">
+						<div class="reg-title"><h2>Контакты</h2></div>
+						<ul>
+							<li><p class="reg-info phone">(8552) 44-37-58, 44-37-47</p></li>
+							<li><p class="reg-info email">tisa-l@mail.ru</p></li>
+							<li><p class="reg-info home">РТ г.Набережные Челны, Ресурсный проезд, 16</p></li>
+						</ul>
+					</div>
+					<div class="play"></div>
+					<div class="col-3">
+						<div class="reg-title"><h2>Направления</h2></div>
+						<ul>
+							<li><p class="reg-info footer-text">Литье пластмас</p></li>
+							<li><p class="reg-info footer-text">Проектирование и изготовление пресс-форм</p></li>
+							<li><p class="reg-info footer-text">Металлообработка</p></li>
+						</ul>
+					</div>
+					<div class="col-3 notplay">
+						<div class="reg-title"><h2>Навигация</h2></div>
+						<ul>
+							<li><a href="Tisa-lIndex.html"class="reg-info footer-link">Главная</a></li>
+							<li>
+								<p style="margin-bottom: 0 !important" class="reg-info footer-link">Продукция</p>
+								<ul>
+									<li class="sublist"><a href="#" class="reg-info sublink">Основная</a></li>
+									<li class="sublist"><a href="Tisa-lCatalogAvto.html" class="reg-info sublink">Автомобилестроение</a></li>
+									<li class="sublist"><a href="#" class="reg-info sublink">Натяжные потолки</a></li>
+								</ul>
+							</li>
+							<li><p style="margin-bottom: 0 !important" class="reg-info footer-link active-link">Контакты</p></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="col-9"><span id="copyright">ООО «Тиса-Л» © 1990 Литье пластмасс.</span></div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
